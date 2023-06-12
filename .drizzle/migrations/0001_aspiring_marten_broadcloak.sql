@@ -1,0 +1,1 @@
+ALTER TABLE `roles` MODIFY COLUMN `created_by_id` varchar(50) NOT NULL;
