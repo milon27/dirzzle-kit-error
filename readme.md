@@ -1,5 +1,3 @@
-## user will have list of blogs, blog can have many category also each category will have many blogs
-
 ## how to reproduce the error
 
 ```bash
