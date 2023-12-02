@@ -11,7 +11,7 @@ export const RoleSchema = mysqlTable("roles", {
   createdById: varchar("created_by_id", { length: 50 })
     .notNull()
     .references(() => UserSchema.id, {
-      onDelete: "set null",
+      onDelete: "no action",
       onUpdate: "cascade",
     }),
 });
