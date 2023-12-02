@@ -44,3 +44,7 @@ createdById: varchar("created_by_id", { length: 50 }).references(() => UserSchem
 > then run all the migrations got this error? migrator tool suppose to handle this right? isn't it a bug?
 
 ![error screenshot](error.png)
+
+## Answer:
+
+we made the field non nullable, but on Delete we try to put set null, that's why got the error
