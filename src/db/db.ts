@@ -10,4 +10,5 @@ const pool = mysql.createPool({
 export const db = drizzle(pool, {
   logger: false,
   schema: { ...users, ...roles },
+  mode: "default",
 });
